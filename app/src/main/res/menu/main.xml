@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item 
+        android:id="@+id/three"
+        android:visible="true"
+        android:icon="@drawable/ic_l_play_light"
+        android:showAsAction="always"> 
+    </item>
+    <item 
+        android:id="@+id/two"
+        android:visible="true"
+        android:icon="@drawable/ic_l_edit_light"
+        android:showAsAction="always">
+    </item>
+    <item 
+        android:id="@+id/one"
+        android:visible="true"
+        android:icon="@drawable/ic_menu_overflow"
+        android:showAsAction="always"> 
+
+
+        <menu>
+            <item
+                android:id="@+id/quickcode"
+                android:title="Quick Code...">
+                <menu>
+                    <item
+                        android:id="@+id/forquick"
+                        android:title="for" />
+                    <item
+                        android:id="@+id/codequick"
+                        android:title="Code..." >  
+                        <menu>
+                            <item
+                                android:id="@+id/postdelayed"
+                                android:title="postDeleayed" />
+                            <item
+                                android:id="@+id/toastmkr"
+                                android:title="Toast" />
+                            <item
+                                android:id="@+id/newact"
+                                android:title="New Activity" />
+                        </menu>
+                    </item>
+                    <item
+                        android:id="@+id/activityquick"
+                        android:title="Activity..." >  
+                        <menu>
+                    <item
+                        android:id="@+id/runonuithread"
+                        android:title="runOnUiThread" />
+                <item
+            android:id="@+id/pbe"
+                    android:title="Press back exit" />
+                    </menu>
+                        </item>
+                        
+                    <item
+                        android:id="@+id/alertquick"
+                        android:title="Alert Dialog" >
+                        <menu>
+                            <item
+                                android:id="@+id/comdialog"
+                                android:title="Common Dialog" />
+                            <item
+                                android:id="@+id/listdialog"
+                                android:title="List Dialog" />
+                            <item
+                                android:id="@+id/mcdialog"
+                                android:title="MultiChoiceDialog" />
+                            <item
+                                android:id="@+id/scdialog"
+                                android:title="SingleChoiceDialog" />
+                            <item
+                                android:id="@+id/dialoglisten"
+                                android:title="DialogListener" />                        
+                        </menu>
+                    </item>
+                    
+                    
+                    <item
+                        android:id="@+id/viewlquick"
+                        android:title="ViewListener" > 
+                        <menu>
+                            <item
+                                android:id="@+id/formatcode"
+                                android:title="Common" />
+                            <item
+                                android:id="@+id/learncode"
+                                android:title="EditText" />
+                            <item
+                                android:id="@+id/configcodestyle"
+                                android:title="AdapterView" />
+                        </menu>
+                    </item>
+                </menu>
+            </item>
+            
+            
+            <item
+                android:id="@+id/viewmenu"
+                android:title="View...">
+                <menu>
+                    <item
+                        android:id="@+id/files"
+                        android:title="Files" />
+                    <item
+                        android:id="@+id/errors"
+                        android:title="Errors" />
+                    <item
+                        android:id="@+id/sesrchres"
+                        android:title="Search Results" />
+                    <item
+                        android:id="@+id/debug"
+                        android:title="Debugger" />
+                    <item
+                        android:id="@+id/logcat"
+                        android:title="Logcat" />
+                    <item
+                        android:id="@+id/filelist"
+                        android:title="File List" />                  
+                </menu>
+            </item>
+
+
+            <item
+                android:id="@+id/go"
+                android:title="GoTo"/>
+
+
+
+            <item
+                android:id="@+id/forward"
+                android:title="Forward"/>
+
+
+
+            <item
+                android:id="@+id/save"
+                android:title="Save"/> 
+
+
+
+
+
+
+
+            <item
+                android:id="@+id/moremenu"
+                android:title="More...">
+                <menu>
+                    <item
+                        android:id="@+id/find"
+                        android:title="Find...">
+                        <menu>
+                            <item
+                                android:id="@+id/finduse"
+                                android:title="Find Usages" />
+                            <item
+                                android:id="@+id/findinfile"
+                                android:title="Find in File" />
+                            <item
+                                android:id="@+id/findinproj"
+                                android:title="Find in Project" />
+                            <item
+                                android:id="@+id/gotoline"
+                                android:title="GoTo Line" />
+                            <item
+                                android:id="@+id/documentation"
+                                android:title="Documentation" />                        
+                        </menu>
+                    </item> 
+
+
+
+
+                    <item
+                        android:id="@+id/refactor"
+                        android:title="Refactor..." >                         
+                        <menu>
+                            <item
+                                android:id="@+id/rename"
+                                android:title="Rename" />
+                            <item
+                                android:id="@+id/inlinevar"
+                                android:title="Inline Variable" />
+                            <item
+                                android:id="@+id/introducevar"
+                                android:title="Introduce Variable" />
+                            <item
+                                android:id="@+id/extractmethod"
+                                android:title="Extract Method" />
+                        </menu>
+                    </item> 
+
+
+
+
+                    <item
+                        android:id="@+id/code"
+                        android:title="Code..." >                    
+                        <menu>
+                            <item
+                                android:id="@+id/orgimps"
+                                android:title="Organize Imports" />
+                            <item
+                                android:id="@+id/surrwith"
+                                android:title="Surround with try-catch" />
+                            <item
+                                android:id="@+id/outcomment"
+                                android:title="Outcomment Code" />
+                            <item
+                                android:id="@+id/uncomment"
+                                android:title="Un-outcomment Code" />
+                            <item
+                                android:id="@+id/creatgetandset"
+                                android:title="Create Setters and Getters" />
+                            <item
+                                android:id="@+id/creatcon"
+                                android:title="Create Constructor" />
+                            <item
+                                android:id="@+id/extractres"
+                                android:title="Extract Resource" />
+                            <item
+                                android:id="@+id/replacetext"
+                                android:title="Replace Textually" />
+                        </menu>
+                    </item> 
+
+
+
+
+
+                    <item
+                        android:id="@+id/format"
+                        android:title="Format..." > 
+                        <menu>
+                            <item
+                                android:id="@+id/formatcode"
+                                android:title="Format Code" />
+                            <item
+                                android:id="@+id/learncode"
+                                android:title="Learn Code Style" />
+                            <item
+                                android:id="@+id/configcodestyle"
+                                android:title="Configure Code Style" />
+                        </menu>
+                    </item> 
+
+
+
+
+
+                    <item
+                        android:id="@+id/project"
+                        android:title="Project..." > 
+                        <menu>
+                            <item
+                                android:id="@+id/refreshbuild"
+                                android:title="Refresh Build" />
+                            <item
+                                android:id="@+id/buildvariants"
+                                android:title="Build Variants" />
+                            <item
+                                android:id="@+id/publishproj"
+                                android:title="Publish Project" />
+                            <item
+                                android:id="@+id/closeproj"
+                                android:title="Close Project" />
+                        </menu>
+                    </item> 
+
+                    <item
+                        android:id="@+id/tools"
+                        android:title="Tools..." > 
+                        <menu>
+                            <item
+                                android:id="@+id/iconlib"
+                                android:title="Icon Library" />
+                            <item
+                                android:id="@+id/codehigh"
+                                android:title="Code highlight" />
+                            <item
+                                android:id="@+id/codeesc"
+                                android:title="Code Escape">
+                                <menu>
+                                    <item
+                                        android:id="@+id/javaopt"
+                                        android:title="Java" />
+                                    <item
+                                        android:id="@+id/xmlopt"
+                                        android:title="XML" /> 
+                                </menu>
+                                </item>
+                            <item
+                                android:id="@+id/other"
+                                android:title="Other" >  
+                                <menu>
+                                    <item
+                                        android:id="@+id/batchrep"
+                                        android:title="Batch Replacement" />
+                                    <item
+                                        android:id="@+id/jsonbean"
+                                        android:title="Json2Bean" />
+                                    <item
+                                        android:id="@+id/convproj"
+                                        android:title="Convert Project" />
+                                    <item
+                                        android:id="@+id/viewsysres"
+                                        android:title="View System Resources" />
+                                    <item
+                                        android:id="@+id/speclassana"
+                                        android:title="Specify Class Analysis" /> 
+                                    <item
+                                        android:id="@+id/mergeproj"
+                                        android:title="Project Merger" />
+                                </menu>
+                            </item> 
+                            
+                        </menu> 
+                      </item>
+
+
+                    <item
+                        android:id="@+id/settings"
+                        android:title="Settings" /> 
+
+                    <item
+                        android:id="@+id/exit"
+                        android:title="Exit" />
+
+
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>
+
+                                        

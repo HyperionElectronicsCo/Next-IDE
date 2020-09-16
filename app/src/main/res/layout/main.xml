@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/mainRelativeLayout1">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:id="@+id/mainFrameLayout1">
+
+		<com.dengxiao.scroll_viewgroup_library.ScrollGroup
+			android:id="@+id/mScrollGroup"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<include
+				layout="@layout/topbar"
+				android:id="@+id/topbar"
+				android:layout_width="match_parent"/>
+
+		</com.dengxiao.scroll_viewgroup_library.ScrollGroup>
+
+	</FrameLayout>
+    
+    <ScrollView
+        android:id="@+id/scroller_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainFrameLayout1"
+        android:scrollbars="@null"
+        android:fillViewport="true">
+        
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent" 
+        android:scrollbars="@null"
+        android:fillViewport="true">
+
+		
+
+			<com.alexvasilkov.gestures.views.GestureFrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/gfl">
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<com.hyperion.nextide.LineNumberedEditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Type here"
+						android:inputType="textMultiLine"
+						android:paddingLeft="16dp"
+						android:paddingRight="16dp"
+						android:paddingTop="5dp"
+						android:paddingBottom="16dp"
+						android:id="@+id/editor_area" 
+                        android:textSize="12dp"
+						android:singleLine="false"
+						android:backgroundTint="@android:color/transparent"/>
+
+				</FrameLayout>
+
+			</com.alexvasilkov.gestures.views.GestureFrameLayout>
+		
+	</HorizontalScrollView>
+    
+    </ScrollView>
+    
+	<include
+		layout="@layout/content_main"/>
+
+</RelativeLayout>
+

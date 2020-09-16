@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.hyperion.nextide">
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	<uses-feature
+		android:glEsVersion="0x00020000"
+		android:required="true"/>
+	<uses-feature
+		android:name="android.hardware.touchscreen"
+		android:required="false"/>
+	<uses-feature
+		android:name="android.software.leanback"
+		android:required="false"/>
+	<uses-feature
+		android:name="android.hardware.type.pc"
+		android:required="false"/>
+	<supports-screens
+		android:largeScreens="true"
+		android:xlargeScreens="true"/>
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		android:resizeableActivity="true">
+		<activity
+			android:name=".BottomSheetExample"
+			android:label="Application Settings"/>
+		<activity
+			android:name=".settings.Application"
+			android:label="Application Settings"/>
+		<activity
+			android:name=".settings.Editor"
+			android:label="Editor Settings"/>
+		<activity
+			android:name=".settings.Codestyle"
+			android:label="Code Style"/>
+		<activity
+			android:name=".settings.Syntax"
+			android:label="Syntax Settings"/>
+		<activity
+			android:name=".settings.Buildrun"
+			android:label="Build / Run Settings"/>
+		<activity
+			android:name=".settings.Dropbox"
+			android:label="Dropbox Settings"/>
+		<activity
+			android:name=".settings.Gsc"
+			android:label="Git Source Control"/>
+		<activity
+			android:name=".settings.Keybindings"
+			android:label="Keybindings"/>
+		<activity
+			android:name=".settings.AdvancedSettings"
+			android:label="Advanced Settings"/>
+		<activity
+			android:name=".settings.Legal"
+			android:label="Legal / About"/>
+		<activity
+			android:name=".IconPicker"
+			android:label="Icons"/>
+		<activity
+			android:name=".SettingsActivity"
+			android:label="Settings"/>
+		<activity
+			android:name=".FileManager"
+			android:label="fileman">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="file"/>
+				<data android:mimeType="*/*"/>
+				<data android:pathPattern=".*\\.classpath"/>
+				<data android:pathPattern=".*\\.java"/>
+				<data android:pathPattern=".*\\.xml"/>
+				<data android:pathPattern=".*\\.txt"/>
+				<data android:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".MainActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>

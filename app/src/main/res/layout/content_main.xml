@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		tools:context="com.hyperion.nextide.MainActivity"
+		tools:showIn="@layout/main"
+		android:gravity="bottom|right">
+
+		<ImageView
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:background="@drawable/image_1"
+			android:id="@+id/tv"
+			android:layout_marginBottom="35dp"
+			android:layout_marginRight="35dp"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

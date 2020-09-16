@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"> 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a Modal BottomSheet"
+        android:textSize="25sp" /> 
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/algo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share this Algorithm" /> 
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/course_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share this Course" /> 
+
+</LinearLayout> 

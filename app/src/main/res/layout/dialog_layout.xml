@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="bottom">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/dialoglayoutLinearLayout2">
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#34B1E9"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:gravity="center"
+				android:id="@+id/dialoglayoutLinearLayout1">
+
+				<ImageView
+					android:src="@drawable/ic_launcher"
+					android:id="@+id/avatar"
+					android:scaleType="centerCrop"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:visibility="visible"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:text="/Storage/Emulated/0/AppProjects/"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:layout_margin="5dp"
+				android:gravity="center_vertical"
+				android:textSize="18sp"
+				android:id="@+id/dialoglayoutTextView1"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.2dp"
+			android:background="#69202020"/>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/bs_rv"
+			android:layout_width="match_parent"
+			android:layout_height="220dp"
+			android:layout_margin="5dp"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
