@@ -1,7 +1,7 @@
 # 🚀 Next-IDE
 
 <p align="center">
-  <img src="assets/nextide_logo.png" width="96" alt="Next-IDE Logo" />
+  <img src="https://github.com/user-attachments/assets/fb645d65-82c6-4b9b-8612-5b7ca60f160a" width="48" height="48" alt="Next-IDE Logo" />
 </p>
 
 <h3 align="center">A lightweight Android IDE alternative built directly for Android.</h3>
@@ -28,7 +28,7 @@ The goal is to create an AIDE-style mobile development environment with a clean 
 ## 📱 Preview
 
 <p align="center">
-  <img src="screenshots/no-open-files.png" width="320" alt="Next-IDE No Open Files Screen" />
+  <img src="https://github.com/user-attachments/assets/490bf741-dbd3-4ae8-9c3f-cc9d0e1389a6" width="360" height="780" alt="Next-IDE No Open Files Screen" />
 </p>
 
 ---
